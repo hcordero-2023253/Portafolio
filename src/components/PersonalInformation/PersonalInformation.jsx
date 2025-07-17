@@ -259,7 +259,7 @@ export const PersonalInformation = () => {
             </div>
           </div>
         </div>
-        </div>
+        </div>       
         {/* Skills Section */}
         <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700">
           <h2 className="text-3xl font-bold text-white mb-8 flex items-center">

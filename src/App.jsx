@@ -3,7 +3,7 @@ import MyRouter from './router/routes'
 function App() {
   return (
     <>
-      {/* <Welcome /> */}
+      <Welcome /> 
       <MyRouter />
     </>
   )
