@@ -184,7 +184,7 @@ export const PersonalInformation = () => {
               <Icon icon="mdi:map-marker" className="text-blue-400 text-xl mt-1 mr-3 flex-shrink-0" />
               <div>
                 <p className="text-gray-400 text-sm">Ubicación</p>
-                <p className="text-white font-medium">Ciudad de México, México</p>
+                <p className="text-white font-medium">Ciudad de Guatemala, Guatemala</p>
               </div>
             </div>
             
