@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react';
 import { skills } from './Skills';
+import { EducationExperience } from './TimeLine';
 
 export const PersonalInformation = () => {
   return (
@@ -288,6 +289,8 @@ export const PersonalInformation = () => {
             ))}
           </div>
         </div>
+        {/* Education and Experience Section */}
+        <EducationExperience />
         </div>
       </div>
     </div>
