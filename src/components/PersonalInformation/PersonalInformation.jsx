@@ -1,6 +1,8 @@
 import { Icon } from '@iconify/react';
 import { skills } from './Skills';
 import { EducationExperience } from './TimeLine';
+import { ProjectsGallery } from './ProjectsGallery';
+import { ProjectPortfolio } from './ProjectPortafolio';
 
 export const PersonalInformation = () => {
   return (
@@ -291,6 +293,10 @@ export const PersonalInformation = () => {
         </div>
         {/* Education and Experience Section */}
         <EducationExperience />
+        {/* Quick Views Section */}
+        <ProjectsGallery />
+        {/* Project Portfolio Section */}
+        <ProjectPortfolio />
         </div>
       </div>
     </div>
