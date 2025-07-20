@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 import { skills } from './Skills';
 import { EducationExperience } from './TimeLine';
 import { ProjectsGallery } from './ProjectsGallery';
-import { ProjectPortfolio } from './ProjectPortafolio';
+import profileImage from '../../assets/ProfilePhoto.jpg'; 
 
 export const PersonalInformation = () => {
   return (
@@ -10,15 +10,35 @@ export const PersonalInformation = () => {
       {/* Header Section */}
       <div className="max-w-5xl mx-auto">
         <div className="bg-gradient-to-r from-blue-800 to-blue-600 rounded-xl shadow-2xl p-6 mb-8 transform transition-all hover:scale-[1.01] duration-300">
-          <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-2">
-            Héctor Mauricio Cordero Oliva
-          </h1>
-          <p className="text-xl text-blue-100 text-center font-medium flex items-center justify-center gap-2">
-            <Icon icon="vscode-icons:file-type-js-official" className="text-2xl" />
-            Desarrollador Full Stack | Apasionado por la tecnología
-          </p>
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            {/* Imagen (arriba en móvil, izquierda en desktop) */}
+            <div className="flex-shrink-0">
+              <img 
+                src={profileImage}
+                alt="Foto de Héctor Mauricio Cordero Oliva" 
+                className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-blue-300 shadow-lg hover:border-blue-100 transition-all"
+              />
+            </div>
+
+            {/* Textos */}
+            <div className="text-center md:text-left">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">
+                Héctor Mauricio Cordero Oliva
+              </h1>
+              
+              <p className="text-lg md:text-xl text-blue-100 font-medium flex flex-col md:flex-row items-center justify-center md:justify-start gap-2">
+                <span className="inline-flex items-center">
+                  <Icon icon="vscode-icons:file-type-js-official" className="text-2xl mr-2" />
+                  Desarrollador Full Stack
+                </span>
+                <span className="hidden md:inline">•</span>
+                <span>Apasionado por la tecnología</span>
+              </p>
+            </div>
+          </div>
         </div>
 
+        
         {/* About Section */}
         <div className="bg-gray-800 bg-opacity-70 backdrop-blur-sm rounded-xl shadow-lg p-8 mb-8 border border-gray-700">
           <h2 className="text-3xl font-bold text-center text-white mb-8 pb-2 border-b border-blue-500 flex items-center justify-center">
@@ -226,7 +246,7 @@ export const PersonalInformation = () => {
               <div>
                 <p className="text-gray-400 text-sm">LinkedIn</p>
                 <a 
-                  href="https://www.linkedin.com/in/hector-cordero" 
+                  href="https://www.linkedin.com/in/hector-mauricio-cordero-oliva-471b5b375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-400 font-medium hover:underline flex items-center"
@@ -295,8 +315,7 @@ export const PersonalInformation = () => {
         <EducationExperience />
         {/* Quick Views Section */}
         <ProjectsGallery />
-        {/* Project Portfolio Section */}
-        <ProjectPortfolio />
+        
         </div>
       </div>
     </div>
