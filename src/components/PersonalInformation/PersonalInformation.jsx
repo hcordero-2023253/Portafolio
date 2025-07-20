@@ -3,6 +3,7 @@ import { skills } from './Skills';
 import { EducationExperience } from './TimeLine';
 import { ProjectsGallery } from './ProjectsGallery';
 import profileImage from '../../assets/ProfilePhoto.jpg'; 
+import { ProjectPortfolio } from './ProjectPortafolio';
 
 export const PersonalInformation = () => {
   return (
@@ -316,6 +317,9 @@ export const PersonalInformation = () => {
         {/* Quick Views Section */}
         <ProjectsGallery />
         
+        {/* Project Portfolio Section */}
+        <ProjectPortfolio />
+
         </div>
       </div>
     </div>

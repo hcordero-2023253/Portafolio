@@ -1,6 +1,7 @@
 // Proyects.jsx
 import { Icon } from '@iconify/react';
-import { projects } from './projects'; // Importa los datos compartidos
+import { projects } from './projects';
+
 
 export const ProjectsGallery = () => {
   return (
